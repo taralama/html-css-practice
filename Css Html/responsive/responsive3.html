@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive3</title>
+    <style>
+      /* .box{
+            height: 100px;
+            /* min-width: 200px;
+            width: 75%;
+            max-width: 500px; 
+            background-color: purple;
+
+            width: clamp(200px, 75%,500px);
+         
+        */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        gap: 1rem;
+        display: flex;
+      }
+      .box {
+        padding: 1rem;
+        min-height: 200px;
+        width: 50%;
+        background-color: rgb(212, 205, 219);
+        box-shadow: 1px 2px 10px 1px;
+        /* border: 1px solid; */
+      }
+
+      .subcontainer1 {
+        gap: 1rem;
+        display: flex;
+      }
+      .subcontainer2 {
+        gap: 1rem;
+        display: flex;
+      }
+
+      .box1 {
+        height: 100%;
+        width: 500px;
+        background-image: url("https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg");
+        background-position: center;
+        background-size: cover;
+      }
+      .box2 {
+        height: 100%;
+        width: 500px;
+        background-image: url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJlYXV0aWZ1bCUyMGhvdXNlfGVufDB8fDB8fHww");
+        background-position: center;
+        background-size: cover;
+      }
+
+      .paragraph {
+        display: flex;
+        align-items: center;
+      }
+
+      @media screen and (max-width: 678px) {
+        .container {
+          flex-direction: column;
+        }
+        .subcontainer1 {
+          padding: 2rem;
+          width: auto;
+          flex-direction: column;
+        }
+        .subcontainer2 {
+          padding: 2rem;
+          width: auto;
+          flex-direction: column;
+        }
+
+        .box1 {
+          height: 100px;
+          width: 100%;
+        }
+        .box2 {
+          height: 100px;
+          width: 100%;
+        }
+        .paragraph {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box subcontainer1">
+        <div class="box1"></div>
+        <div class="paragraph">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            velit saepe iusto ipsam et nihil repellat impedit! Expedita corporis
+            officiis repellat cupiditate obcaecati fuga ex harum officia eos?
+            Numquam, omnis!
+          </p>
+        </div>
+      </div>
+      <div class="box subcontainer2">
+        <div class="box2"></div>
+        <div class="paragraph">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            velit saepe iusto ipsam et nihil repellat impedit! Expedita corporis
+            officiis repellat cupiditate obcaecati fuga ex harum officia eos?
+            Numquam, omnis!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

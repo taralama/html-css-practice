@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive css</title>
+  </head>
+  <style>
+    /* min-width -> kamti ma ... vadi ma jati vayeni hune  */
+    /* max-width -> kamtima jati vayeni .. badi ma ... vanda nahune */
+
+    .container {
+      height: 200px;
+      width: 900px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 300px;
+        background-color: red;
+        border: 1px solid black;
+      }
+    }
+
+    .child {
+      height: 100px;
+      width: 300px;
+      background-color: greenyellow;
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .child {
+        display: block;
+      }
+    }
+
+    .child2 {
+      height: 100px;
+      width: 300px;
+      background-color: blue;
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      .child2 {
+        display: block;
+      }
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 100px 100px;
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+
+    @media screen and (max-width: 676px) {
+      .boxes {
+        grid-template-columns: 200px;
+      }
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      
+    }
+
+    .container3 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat();
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+
+    .box3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: white;
+
+      height: 10rem;
+    }
+    .box3:hover{
+        color: black;
+        background-color: white;
+        transition: .3s;
+        
+    }
+
+    @media screen and (max-width: 1000px) {
+      .container3 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .container3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media screen and (max-width: 376px) {
+      .container3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+  <body>
+    <div class="container"></div>
+    <div class="child"></div>
+    <div class="child2"></div>
+
+    <div class="boxes">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+    </div>
+
+    <h1>Screen size boxes</h1>
+
+    <div class="container3">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+      <div class="box3">6</div>
+      <div class="box3">7</div>
+      <div class="box3">8</div>
+      <div class="box3">9</div>
+      <div class="box3">10</div>
+      <div class="box3">11</div>
+      <div class="box3">12</div>
+      <div class="box3">13</div>
+      <div class="box3">14</div>
+      <div class="box3">15</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling & Capturing</title>
+    <style>
+        #outerdiv{
+           height: 100px;
+           width: 100%;
+           background-color: red;
+           border: 1px solid;
+           padding: 1rem;
+        }
+        #middlediv{
+            padding: 1rem;
+            height: 70px;
+            width: 100%;
+            background-color: blue;
+        }
+        #innerdiv{
+            padding: 1rem;
+           height: 40px;
+           width: 100%;
+           background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div id="outerdiv">
+        <div id="middlediv">
+            <div id="innerdiv">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="bubbling.js"></script>
+</html>

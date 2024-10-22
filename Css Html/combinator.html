@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sem5 #boys {
+        /* decendent combinator */
+        color: red;
+      }
+
+      .sem5 > h1 {
+        /* child combinators */
+        color: green;
+      }
+
+      .sem5,
+      #girls {
+        /*group combinators */
+        color: blue;
+      }
+
+      .sem4 > ul {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sem5">
+      <h1>Students</h1>
+      <ul id="boys">
+        <li>Anish</li>
+        <li>Suren</li>
+        <li>Nukesh</li>
+        <li>Rohan</li>
+      </ul>
+
+      <ol id="girls">
+        <li>Samrita</li>
+        <li>Rachi</li>
+        <li>Chameli</li>
+      </ol>
+    </div>
+
+    <div class="sem4">
+      <h1>Students</h1>
+      <ul>
+        <li>Sristi</li>
+        <li>Pema</li>
+        <li>Doma</li>
+      </ul>
+    </div>
+  </body>
+</html>

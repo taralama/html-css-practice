@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div p {
+        box-shadow: 1px 2px 4px 2px black;
+        align-items: center;
+      }
+      p:first-child {
+        height: 100px;
+        width: 600px;
+        border: 1px solid black;
+        display: block;
+        background-color: red;
+        color: white;
+      }
+      p:nth-child(2) {
+        height: 100px;
+        width: 600px;
+        border: 1px solid black;
+        display: block;
+        background-color: rgb(0, 255, 106);
+        color: white;
+      }
+      p:last-child {
+        height: 100px;
+        width: 600px;
+        border: 1px solid black;
+        display: block;
+        background-color: rgb(0, 47, 255);
+        color: white;
+      }
+
+      #inputbox {
+        width: 600px;
+        height: 100px;
+        border: 1px solid black;
+        font-size: xx-large;
+      }
+
+      /* #inputbox:active{
+            background-color: brown;
+            color: white;
+            font-size: xx-large;
+        } */
+
+      #inputbox:focus {
+        background-color: rgb(202, 236, 79);
+        color: black;
+        font-size: xx-large;
+      }
+
+      #inputbutton {
+        height: 50px;
+        width: 50px;
+      }
+      /* #inputbutton:active{
+            background-color: black;
+            border-radius: 50%;
+            transition: .5s;
+            
+        } */
+
+      #inputbutton:focus {
+        background-color: black;
+        border-radius: 50%;
+        transition: 0.5s;
+      }
+
+      [type="text"]{
+        height: 50px;
+        border: 2px solid red;
+
+      }
+
+
+      /* negetion pseudo-class which dont have .fancy class name*/
+
+      p:not(.fancy){
+        height: 200px;
+      }
+      
+
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>The first child</p>
+
+      <p>The second child</p>
+      <p>The Third child</p>
+      <p class="fancy">The fourth child</p>
+    </div>
+
+    <input id="inputbox" type="text" />
+    <input id="inputbutton" type="button" value="" />
+    <p>This is for the not()</p>
+    <input type="text">
+    <label for=""></label>
+  </body>
+</html>
