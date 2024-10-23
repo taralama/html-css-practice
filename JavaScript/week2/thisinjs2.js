@@ -21,4 +21,4 @@ const obj2 = {
  }
 }
 
-obj2.getting()
+obj2.getting() 
