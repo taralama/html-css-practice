@@ -22,3 +22,5 @@ const obj2 = {
 }
 
 obj2.getting() 
+
+console.log(obj) //need to commit
