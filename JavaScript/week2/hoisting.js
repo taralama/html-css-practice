@@ -3,10 +3,11 @@ console.log(x);
 var x = 'This is output';
 
 function name() {
-    // console.log(y) -- this works
+    console.log(y) //-- this works
     var y = ' this is y output'
 }
 
+name()
 
 // console.log(y) // value of y is inside the function it cannot get the value of y hence working arise 
 

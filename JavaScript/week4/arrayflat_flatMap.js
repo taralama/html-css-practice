@@ -33,7 +33,7 @@ const guest = [
 ]
 
 const guestList = guest.flatMap(guest => guest)
-console.log(guestList);
+console.log('guest are',guestList);
 
 // for extracting hobbies
 

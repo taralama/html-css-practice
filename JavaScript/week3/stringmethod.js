@@ -50,8 +50,9 @@ console.log(str.repeat(5));
 console.log(str.match("oo"));
 
 //returns the new array adding or removing the previous array
+//also modified the original array
 console.log(fruits.splice(1, 3, "Papaya", "Avocardo", "pears"));
-console.log(fruits);
+console.log('modified'+fruits);
 
 console.log(str.toLowerCase().includes('hi'))
 

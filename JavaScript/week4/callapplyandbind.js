@@ -8,14 +8,14 @@ const person = {
 
 const person2 = {
   firstName: "Rohan",
-  lastName: "Pyatha",
+  lastName: "Pyatha", 
 };
 const person3 = {
   firstName: "Anish",
   lastName: "Shrestha",
 };
 
-console.log(person.fullName.call(person2));
+console.log('full nameis '+person.fullName.call(person2));
 
 const newFullname = person.fullName.bind(person2);
 console.log(newFullname());
