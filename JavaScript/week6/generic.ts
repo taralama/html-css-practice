@@ -50,7 +50,7 @@
 //using generic fetching the data 
 
 
-const fetchData =async<T> (url:string): Promise<T>=>{
+const fetchData =async<T> (url:string): Promise<T> =>{
     const response = await fetch(url)
     const res = await response.json();
     return res
