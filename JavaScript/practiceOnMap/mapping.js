@@ -29,17 +29,12 @@ console.log(studentNamesWithCapital);
 
 //index match practice // if the index matches then the number will be change or the todo have to be changed
 
- 
-
-console.log(todoChanger(1));
+// console.log(todoChanger(1));
 
 //same above but trying to solve using splice
 
-for (const a of students) {
-    if (a.id ==3){
-        
-        students.splice(3,1,{id:3})
-        console.log(students)
+// const stu = [];
 
-    }
-}
+// const b = students.splice(4,1,{id:3,firstName:'hero',lastName:'lam',address:'tusal'} );
+// stu.push(b)
+// console.log(stu)
