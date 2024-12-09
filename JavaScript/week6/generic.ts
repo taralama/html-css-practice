@@ -79,7 +79,7 @@ interface Post {
     console.log('user', users[0].body)
 })();
 
-
+ 
 
 
 const fetchDataWithConstraint = async <T extends { id: number }>(data: T): Promise<T> => {
