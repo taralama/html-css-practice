@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+}
+
+#card {
+  height: 10rem;
+  width: 10rem;
+  background-color: yellow;
+  position: fixed;
+}
+
+.container {
+  /* border: 1px solid white; */
+  height: 100svh;
+
+  position: relative;
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+#leftBox,
+#rightBox {
+  margin-top: 10rem;
+  height: 20rem;
+  width: 15rem;
+  border: 1px dotted white;
+  padding: 1rem;
+}
+
+#rightBox {
+  display: grid;
+  grid-template-columns: 1;
+  row-gap: 1rem;
+}
+
+#leftBox {
+  display: grid;
+  grid-template-columns: 1;
+  row-gap: 1rem;
+}
+
+.items {
+  background-color: rgb(243, 232, 75);
+  padding: 1rem;
+  max-height: 1rem;
+}
